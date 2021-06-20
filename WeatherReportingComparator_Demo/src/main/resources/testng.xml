@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Weather Reporting Comparator" >
+
+
+  <test name="Weather Reporting Comparator Tests" >
+    <classes>
+    <!--comment the classes which you don't want to execute by right click>source>add block comment  -->
+      		<class name="com.comparator.qa.TestCases.NDTVWeatherTest" />
+      
+    </classes>
+  </test>
+</suite>
