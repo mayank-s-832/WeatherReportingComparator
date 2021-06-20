@@ -10,6 +10,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.Alert;
 
 
 import com.comparator.qa.util.TestUtil;
@@ -55,12 +56,14 @@ public class BaseClass {
 			driver.manage().timeouts().pageLoadTimeout(TestUtil.page_load_time, TimeUnit.SECONDS);
 			driver.manage().timeouts().implicitlyWait(TestUtil.implicitly_wait_time, TimeUnit.SECONDS);
 			driver.get(prop.getProperty("url"));
+			
+			
 		}
 		
-//	public static void main(String[] args) {
-//		BaseClass obj = new BaseClass();
-//		initialization();
-//	}
+	public static void main(String[] args) {
+		BaseClass obj = new BaseClass();
+		initialization();
+	}
 
 
 	

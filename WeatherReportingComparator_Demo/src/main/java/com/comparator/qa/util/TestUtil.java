@@ -16,7 +16,7 @@ import com.comparator.qa.base.BaseClass;
 
 public class TestUtil extends BaseClass {
 
-	public static long page_load_time = 20;
+	public static long page_load_time = 60;
 	public static long implicitly_wait_time = 10;
 
 	public void TakeScreenShotMethod(String filewithpath) throws IOException {

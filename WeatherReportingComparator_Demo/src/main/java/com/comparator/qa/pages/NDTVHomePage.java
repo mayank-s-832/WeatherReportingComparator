@@ -8,6 +8,9 @@ import com.comparator.qa.base.BaseClass;
 
 public class NDTVHomePage extends BaseClass {
 	
+	@FindBy(linkText = "No Thanks")
+	WebElement notificationDecline;
+	
 	@FindBy(xpath = "//a[@id ='h_sub_menu']")
 	WebElement expandButton;
 
@@ -23,5 +26,12 @@ public class NDTVHomePage extends BaseClass {
 		expandButton.click();
 		weatherPageLink.click();
 		return new NDTVWeatherPage();
+	}
+	
+	public void declineBreakingNewsNotification() {
+		if(notificationDecline.isDisplayed()) {
+			notificationDecline.click();
+		}
+		
 	}
 }
