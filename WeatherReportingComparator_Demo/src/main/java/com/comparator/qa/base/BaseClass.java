@@ -61,8 +61,12 @@ public class BaseClass {
 		}
 		
 	public static void main(String[] args) {
-		BaseClass obj = new BaseClass();
-		initialization();
+	int a = 4;
+	float b = 2.67f;
+	System.out.println(a-b);
+	if(b>a) {
+		System.out.println("s");
+	}
 	}
 
 

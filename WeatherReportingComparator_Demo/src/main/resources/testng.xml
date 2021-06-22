@@ -2,12 +2,13 @@
 
 <suite name="Weather Reporting Comparator">
 	
-	<test name="Weather Reporting Comparator Tests">
+	<test name="Weather Reporting Comparator Tests" parallel ="classes" thread-count ="2">
 		<classes>
 			<!--comment the classes which you don't want to execute by right click>source>add 
 				block comment -->
-			<class name="com.comparator.qa.TestCases.NDTVWeatherTest" />
-
+			<class name="com.comparator.qa.TestCases.NDTVHomePageTest" />
+			<class name="com.comparator.qa.TestCases.NDTVWeatherPageTest" />
+			<class name="com.comparator.qa.TestCases.TempratureComparisionTest" />
 		</classes>
 	</test>
 </suite>

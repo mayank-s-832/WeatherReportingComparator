@@ -9,7 +9,7 @@ import com.comparator.qa.base.BaseClass;
 import com.comparator.qa.pages.NDTVHomePage;
 import com.comparator.qa.pages.NDTVWeatherPage;
 
-public class NDTVWeatherTest extends BaseClass {
+public class NDTVWeatherPageTest extends BaseClass {
 
 	NDTVHomePage NDTVHomePageobj;
 	NDTVWeatherPage NDTVWeatherPageobj;
