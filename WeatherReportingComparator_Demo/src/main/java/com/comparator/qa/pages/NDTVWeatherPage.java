@@ -12,7 +12,7 @@ import com.comparator.qa.base.BaseClass;
 public class NDTVWeatherPage extends BaseClass {
 
 	@FindBy(xpath = "//input[@id = 'searchBox']")
-	WebElement citySearchBox;
+	public WebElement citySearchBox;
 
 	@FindBy(xpath = "//b[contains(text(),'Temp in Degrees')]")
 	WebElement getTempinDegree;
@@ -21,7 +21,7 @@ public class NDTVWeatherPage extends BaseClass {
 	List<WebElement> availableCitiesOnMap;
 	
 	@FindBy(xpath = "//b[contains(text(),'Temp in Degrees')]")
-	WebElement tempinCelcius;
+	public WebElement tempinCelcius;
 
 	public NDTVWeatherPage() {
 		PageFactory.initElements(driver, this);
@@ -38,9 +38,13 @@ public class NDTVWeatherPage extends BaseClass {
 
 	public boolean checkCityonMap(String cityName) {
 		boolean random = false;
-		if (availableCitiesOnMap.contains(cityName)) {
+	for(WebElement el : availableCitiesOnMap) {
+		if(el.getText().equals(cityName)) {
 			random = true;
+			break;
 		}
+	}
+		
 		return random;
 	}
 
