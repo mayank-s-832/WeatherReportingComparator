@@ -46,8 +46,8 @@ public class NDTVWeatherPageTest extends BaseClass {
 	public void verify_temp_information_is_present_for_the_city() {
 	WebElement cityElementOnMap =	NDTVWeatherPageobj.getCityElementonMap(CityName);
 	cityElementOnMap.click();
-	//String str = NDTVWeatherPageobj.tempinCelcius.getText();
-	//System.out.println(str);
+	String str = NDTVWeatherPageobj.tempinCelcius.getText();
+	System.out.println(str);
 	Assert.assertTrue(NDTVWeatherPageobj.tempinCelcius.isDisplayed(),"Temp of city "+CityName+" is not visible on the map");
 	
 	}

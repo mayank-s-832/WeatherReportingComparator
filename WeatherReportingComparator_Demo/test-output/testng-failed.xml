@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.comparator.qa.TestCases.NDTVWeatherTest">
+      <class name="com.comparator.qa.TestCases.NDTVHomePageTest">
         <methods>
           <include name="setup"/>
-          <include name="Verify_city_name_entered_and_checked"/>
-          <include name="verify_temp_information_is_present_for_the_city"/>
-          <include name="Verify_city_is_present_on_the_map"/>
+          <include name="WebsiteTitletest"/>
         </methods>
-      </class> <!-- com.comparator.qa.TestCases.NDTVWeatherTest -->
+      </class> <!-- com.comparator.qa.TestCases.NDTVHomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

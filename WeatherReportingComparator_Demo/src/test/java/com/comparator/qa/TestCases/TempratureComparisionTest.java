@@ -34,7 +34,7 @@ public class TempratureComparisionTest extends BaseClass {
 		CityName = prop.getProperty("City");
 		unit = prop.getProperty("units");
 		APIkey = prop.getProperty("appid");
-		allowedVariation = (Integer) prop.get("expectedVariation");
+		allowedVariation = Integer.parseUnsignedInt(prop.getProperty("expectedVariation"));
 		
 	}
 
@@ -54,7 +54,7 @@ public class TempratureComparisionTest extends BaseClass {
 		System.out.println(str);
 	    int tempUI = TestUtil.extractNumericTemp(str);
 	    float tempAPI = GetTempOWAPIobj.getTempfromOpenWeather(CityName, unit, APIkey);
-	    //float tempAPI = 6.87f;
+	    //float tempAPI = 40.87f;
 	    float variation = Math.abs(tempAPI-tempUI);
 	    System.out.println("actual variation: "+variation);
 	    System.out.println("allowed variation: "+allowedVariation);
