@@ -8,5 +8,5 @@ NDTVWeatherPageTest.java contains the test related to NDTV Weather page.
 
 Testng.xml present in the 'src\main\resources' directory can be used for executing the test classes in parallel. 
 
-all the changes are to be done in config.properties file present in the "TestData" folder as per the instructions mentioned before each attribute requiring the input from the user
+IMP- all the user inputs are to be provided through the config.properties file present in the "TestData" folder as per the instructions mentioned before each attribute requiring the input from the user
 
